@@ -17,8 +17,12 @@ console.log(globalLet); // Output: "I'm also global, but scoped with let"
 console.log(globalConst); // Output: "I'm a global constant"
 
 // Block Scope
-//console.log(blockVar);
+console.log(blockVar);
 //console.log(blockLet);
+blockVar = "I'm a reassigned block-scoped var";
+console.log(blockVar);
+blockLet = "I'm a reassigned block-scoped let";
+console.log(blockLet);
 
 function show(){
     var functionVar = "I'm a block-scoped var";
