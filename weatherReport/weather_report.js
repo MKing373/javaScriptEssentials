@@ -12,7 +12,9 @@ function showweatherDetails(event) {
             weatherInfo.innerHTML = 
                 `<h2>Weather in ${data.name}</h2>
                 <p>Temperature: ${data.main.temp} &#8451;</p>
-                <p>Weather: ${data.weather[0].description}</p>`;
+                <p>Weather: ${data.weather[0].description}</p>
+                <p>lat: ${data.coord.lat}</p>
+                <p>lon: ${data.coord.lon}</p>`;
         })
 }
 
